@@ -22,8 +22,8 @@
             <span>Quản lý User</span>
         </a>
         <ul>
-            <li><a href="{{ route('admin.users.index') }}">Danh sách </a></li>
-            <li><a href="{{ route('admin.users.create') }}">Thêm mới</a></li>
+            <li><a href="#">Danh sách </a></li>
+            <li><a href="#">Thêm mới</a></li>
         </ul>
     </li>
 

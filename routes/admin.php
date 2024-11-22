@@ -16,7 +16,7 @@ use App\Http\Controllers\Admin\SupplierController;
 |
 */
 
-Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
+Route::prefix('admin')->name('admin.')->group(function () {
 
     Route::get('/', function () {
         return view('admin.dashboard');
@@ -24,3 +24,4 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     // viết route admin trong này
 
 });
+// ->middleware('auth')

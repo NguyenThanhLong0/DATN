@@ -123,14 +123,14 @@
                         <div class="profile_info_iner">
                             <div class="profile_author_name">
                                 <p>Chào mừng</p>
-                                <h5>{{ Auth::user()->name }}</h5>
+                                {{-- <h5>{{ Auth::user()->name }}</h5> --}}
                             </div>
                             <div class="profile_info_details">
                                 <li>
-                                    <form action="{{ route('logout') }}" method="POST">
+                                    {{-- <form action="{{ route('logout') }}" method="POST">
                                         @csrf
                                         <button type="submit" class="dropdown-item">Đăng xuất</button>
-                                    </form>
+                                    </form> --}}
 
                                 <li><a href="{{ url('/') }}">Trở về trang chủ</a></li>
 

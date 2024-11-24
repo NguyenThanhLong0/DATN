@@ -24,7 +24,7 @@
 
         @include('admin.layouts.partials.topbar')
 
-        <div class="main_content_iner overly_inner ">
+        <div class="main_content_iner ">
 
             @yield('content')
 

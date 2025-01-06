@@ -19,11 +19,11 @@
             <div class="icon_menu">
                 <img src="/adminn/img/menu-icon/3.svg" alt>
             </div>
-            <span>Quản lý User</span>
+            <span>Quản lý Customer</span>
         </a>
         <ul>
-            <li><a href="{{ route('admin.users.index') }}">Danh sách </a></li>
-            <li><a href="{{ route('admin.users.create') }}">Thêm mới</a></li>
+            <li><a href="{{ route('admin.customers.index') }}">Danh sách </a></li>
+            <li><a href="{{ route('admin.customers.create') }}">Thêm mới</a></li>
         </ul>
     </li> --}}
 

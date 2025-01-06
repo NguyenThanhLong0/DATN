@@ -123,7 +123,9 @@
                         <div class="profile_info_iner">
                             <div class="profile_author_name">
                                 <p>Chào mừng</p>
-                                {{-- <h5>{{ Auth::user()->name }}</h5> --}}
+
+                                <h5>{{ Auth::user()->customer_name }}</h5>
+
                             </div>
                             <div class="profile_info_details">
                                 <li>

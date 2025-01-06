@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ColorController;
 use App\Http\Controllers\Admin\SizeController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         return view('admin.dashboard');
     })->name('dashboard');
     // viết route admin trong này
-
+    Route::resource('/colors', ColorController::class);
+    
 });
 // ->middleware('auth')

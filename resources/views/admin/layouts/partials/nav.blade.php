@@ -6,7 +6,7 @@
 </div>
 <ul id="sidebar_menu">
     <li class>
-        <a href="{{ route('admin.dashboard') }}" aria-expanded="false">
+        <a href="" aria-expanded="false">
             <div class="icon_menu">
                 <img src="/adminn/img/menu-icon/dashboard.svg" alt>
             </div>
@@ -14,18 +14,18 @@
         </a>
     </li>
 
-    <li class="mm-active">
+    {{-- <li class="mm-active">
         <a class="has-arrow" href="#" aria-expanded="false">
             <div class="icon_menu">
                 <img src="/adminn/img/menu-icon/3.svg" alt>
             </div>
-            <span>Quản lý User</span>
+            <span>Quản lý Customer</span>
         </a>
         <ul>
-            <li><a href="#">Danh sách </a></li>
-            <li><a href="#">Thêm mới</a></li>
+            <li><a href="{{ route('admin.customers.index') }}">Danh sách </a></li>
+            <li><a href="{{ route('admin.customers.create') }}">Thêm mới</a></li>
         </ul>
-    </li>
+    </li> --}}
 
 
 
@@ -37,7 +37,7 @@
             <span>Quản lý category</span>
         </a>
         <ul>
-            <li><a href="#">Danh sách </a></li>
+            <li><a href="{{ route('category.index')}}">Danh sách </a></li>
             <li><a href="#">Thêm mới</a></li>
         </ul>
     </li>
@@ -53,6 +53,18 @@
         </a>
         <ul>
             <li><a href="#">Danh sách </a></li>
+        </ul>
+    </li>
+    <li class="mm-active">
+        <a class="has-arrow" href="#" aria-expanded="false">
+            <div class="icon_menu">
+                <img src="/adminn/img/menu-icon/2.svg" alt>
+            </div>
+            <span>Quản lý colors</span>
+        </a>
+        <ul>
+            <li><a href="{{ route('admin.colors.index') }}">Danh sách </a></li>
+            <li><a href="#">Thêm mới</a></li>
         </ul>
     </li>
 </ul>

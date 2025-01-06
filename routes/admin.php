@@ -1,9 +1,12 @@
 <?php
 
-use App\Http\Controllers\Admin\SizeController;
+
+use App\Http\Controllers\Admin\ColorController;
+use App\Http\Controllers\Admin\CustomerController;
+
 use App\Http\Controllers\Admin\UserController;
+use App\Models\Customer;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\SupplierController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +19,15 @@ use App\Http\Controllers\Admin\SupplierController;
 |
 */
 
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
 
     Route::get('/', function () {
         return view('admin.dashboard');
     })->name('dashboard');
     // viết route admin trong này
 
+    Route::resource('/colors', ColorController::class);
+
+    Route::resource('customers', CustomerController::class);
+
 });
-// ->middleware('auth')

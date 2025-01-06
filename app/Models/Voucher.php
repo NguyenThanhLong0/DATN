@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Voucher extends Model
+{
+    use HasFactory;
+    protected $table='voucher';
+    public $timestamps = false;
+    protected $fillable = [
+        'voucher_id',
+        'code',
+        'discount_type',
+        'discount_value',
+        'start_date',
+        'end_date',
+        'min_oder_value',
+        'product_id ',
+    ];
+}

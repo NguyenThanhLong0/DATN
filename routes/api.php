@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\Api\VoucherController;
 use App\Http\Controllers\Api\ColorController;
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\UserController;
@@ -22,6 +23,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::apiResource('voucher', VoucherController::class);
 
 Route::apiResource('/colors', ColorController::class);
 
@@ -51,5 +55,6 @@ Route::apiResource('customers', CustomerController::class);
 
 //  Xóa khách hàng:
 // Route::delete('customers/{customer}', [CustomerController::class, 'destroy'])->name('customers.destroy');
+
 
 
